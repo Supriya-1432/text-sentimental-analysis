@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content%}
+	<!-- <center>
+	<h1 style="padding-top:5%;">Sentiment Analysis</h1>
+	<h3 style="padding-top:5%;">Enter a movie review in the input box below.</h3>
+	</center>
+	<div  style="padding-top:5%;padding-bottom:13%;padding-left:38%;padding-right:30%;">
+	<form action="/classify" method="POST" class="d-flex" style="width: 340px;">
+		<input class="form-control me-2" type="text" name="text" placeholder="Enter movie review" required style="width:1000px;">
+		<textarea name="text" id="text" cols="30" rows="10">Enter movie review</textarea>
+		<br>
+		<button class="btn btn-primary d-block" type="submit">Classify</button>
+	</form>
+	</div> -->
+	<center>
+	<form class="form" action="/classify" method="POST" style="width: 800px;padding-top: 5%; margin-top: 7%;">
+		<div class="title" style="padding-left: 23%;padding-bottom: 7%;font-size: 40px;"> Text Sentimental Analysis</div>
+		<textarea placeholder="Enter your movie review here" name="text" ></textarea>
+		 
+		<button style="margin-top: 3%; padding-right: 3%;padding-left: 3%;">Classify</button>
+	</form>
+	</center>
+{%endblock%}
+
+
+
